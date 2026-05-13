@@ -7,18 +7,22 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-migrations-bundle": "^4.0",
         "symfony/console": "7.4.*",
         "symfony/dotenv": "7.4.*",
-        "symfony/flex": "^2",
+        "symfony/flex": "^2.10",
         "symfony/framework-bundle": "7.4.*",
         "symfony/runtime": "7.4.*",
         "symfony/yaml": "7.4.*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^4.3",
         "escapestudios/symfony2-coding-standard": "^3.18",
-        "friendsofphp/php-cs-fixer": "^3.95",
-        "rector/rector": "^2.4",
-        "squizlabs/php_codesniffer": "^4.0"
+        "fakerphp/faker": "^1.24",
+        "friendsofphp/php-cs-fixer": "^3.95.1",
+        "rector/rector": "^2.4.2",
+        "squizlabs/php_codesniffer": "^4.0.1",
+        "symfony/maker-bundle": "^1.67"
     },
     "config": {
         "allow-plugins": {
