@@ -5,9 +5,13 @@ namespace App\Entity;
 use App\Repository\CategoryRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Category entity.
+ */
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
-class Category
-{
+#[ORM\Table(name: 'categories')]
+
+class Category {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

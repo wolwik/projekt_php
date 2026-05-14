@@ -6,9 +6,13 @@ use App\Repository\AnswerRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Answer entity.
+ */
 #[ORM\Entity(repositoryClass: AnswerRepository::class)]
-class Answer
-{
+#[ORM\Table(name: 'answers')]
+
+class Answer {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

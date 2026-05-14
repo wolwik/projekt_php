@@ -40,7 +40,7 @@ class QuestionFixtures extends Fixture {
             );
 
             $question->setContent(
-                $this->faker->paragraph()
+                $this->faker->realText()
             );
 
             $question->setCreatedAt(

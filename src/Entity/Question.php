@@ -21,8 +21,8 @@ class Question {
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(length: 1025)]
-    private ?string $content = null;
+    #[ORM\Column(type: 'text')]
+    private string $content;
 
     #[ORM\Column]
     private ?\DateTime $createdAt = null;

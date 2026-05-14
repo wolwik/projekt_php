@@ -5,9 +5,13 @@ namespace App\Entity;
 use App\Repository\TagRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Tag entity.
+ */
 #[ORM\Entity(repositoryClass: TagRepository::class)]
-class Tag
-{
+#[ORM\Table(name: 'tags')]
+
+class Tag {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
