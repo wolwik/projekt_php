@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Question {{ id }}
+{% endblock %}
+
+{% block body %}
+    <h1>View question {{ id }}</h1>
+    {% if question is defined and question|length %}
+        <div>
+            <h2>{{ question.title }}</h2>
+            <p>{{ question.content }}</p>
+            <a href="{{ url('question_list') }}">Back</a>
+        </div>
+    {% else %}
+        <p>Question not found.</p>
+    {% endif %}
+{% endblock %}
+
